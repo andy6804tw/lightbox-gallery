@@ -9,7 +9,7 @@ function call(id) {
     console.log(item);
     if (id === "all") {
       item.classList.remove('d-none');
-      item.classList.add('fadeIn');
+      item.classList.add('fadeIn','glightbox');
       setTimeout(clean,500);
     } else {
       const check = items[index].classList.contains(id);
@@ -17,10 +17,10 @@ function call(id) {
 
       if (check) {
         item.classList.remove('d-none');
-        item.classList.add('fadeIn');
+        item.classList.add('fadeIn','glightbox');
       } else {
         item.classList.add('d-none');
-        item.classList.remove('fadeIn');
+        item.classList.remove('fadeIn','glightbox');
       }
     }
   })
